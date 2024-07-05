@@ -1,13 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const express = require("express");
+const express_1 = __importDefault(require("express"));
 const PORT = process.env.PORT || 3000;
-const app = express();
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.get("/", function (request, response) {
-    console.log(`root requested ${request.params}`);
-    response.send("Olá, mundo");
+const app = (0, express_1.default)();
+app.use(express_1.default.json());
+app.use(express_1.default.urlencoded({ extended: true }));
+app.get("/helloworld", function (request, response) {
+    response.send("Hello, World!");
 });
 app.listen(PORT, () => {
     console.log(`Server running...`);
