@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getAllShaman = void 0;
+exports.getShamanByName = exports.getAllShaman = void 0;
 const shaman_1 = __importDefault(require("../models/shaman"));
 const getAllShaman = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
@@ -26,3 +26,16 @@ const getAllShaman = (req, res) => __awaiter(void 0, void 0, void 0, function* (
     }
 });
 exports.getAllShaman = getAllShaman;
+const getShamanByName = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const name = req.params.name;
+        const shaman = yield shaman_1.default.find({ name: name });
+        console.log("Dados encontrados:\n" + shaman);
+        res.status(200).send(shaman);
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).send(err);
+    }
+});
+exports.getShamanByName = getShamanByName;

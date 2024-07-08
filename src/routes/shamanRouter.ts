@@ -1,8 +1,12 @@
 import { Router } from "express";
-import { getAllShaman } from "../controllers/shamanController";
+import {
+  getAllShamans,
+  getShamanByName,
+} from "../controllers/shamanController";
 
 const shamanRouter = Router();
 
-shamanRouter.get("/shamans", getAllShaman);
+shamanRouter.get("/shamans", getAllShamans);
+shamanRouter.get("/shamans/:name", getShamanByName);
 
 export default shamanRouter;
