@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import express from "express";
 import dotenv from "dotenv";
 import connectDB from "./config/database";
+import shamanRouter from "./routes/shamanRouter";
 
 dotenv.config();
 connectDB();
@@ -11,6 +12,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use("/api", shamanRouter);
 
 app.get("/helloworld", function (request: Request, response: Response) {
   response.send("Hello, World!");
