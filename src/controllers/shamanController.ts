@@ -7,8 +7,7 @@ export const getAllShamans = async (
 ): Promise<void> => {
   try {
     const allShaman: IShaman[] = await Shaman.find({});
-    console.log("Dados encontrados:\n" + allShaman);
-    res.status(200).send("Shamans");
+    res.status(200).json(allShaman);
   } catch (err) {
     console.log(err);
     res.status(500).send(err);
@@ -22,8 +21,7 @@ export const getShamanByName = async (
   try {
     const name: string = req.params.name;
     const shaman: IShaman[] = await Shaman.find({ name: name });
-    console.log("Dados encontrados:\n" + shaman);
-    res.status(200).send(shaman);
+    res.status(200).json(shaman);
   } catch (err) {
     console.log(err);
     res.status(500).send(err);
