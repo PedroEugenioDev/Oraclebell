@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import connectDB from "./config/database";
 import shamanRouter from "./routes/shamanRouter";
 import spiritRouter from "./routes/spiritRouter";
+import animeRouter from "./routes/animeRouter";
 
 dotenv.config();
 connectDB();
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/api", shamanRouter);
 app.use("/api", spiritRouter);
+app.use("/api", animeRouter);
 
 app.get("/helloworld", function (request: Request, response: Response) {
   response.send("Hello, World!");
