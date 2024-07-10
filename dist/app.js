@@ -9,6 +9,7 @@ const database_1 = __importDefault(require("./config/database"));
 const shamanRouter_1 = __importDefault(require("./routes/shamanRouter"));
 const spiritRouter_1 = __importDefault(require("./routes/spiritRouter"));
 const animeRouter_1 = __importDefault(require("./routes/animeRouter"));
+const mangaRouter_1 = __importDefault(require("./routes/mangaRouter"));
 dotenv_1.default.config();
 (0, database_1.default)();
 const PORT = process.env.PORT || 3000;
@@ -18,6 +19,7 @@ app.use(express_1.default.urlencoded({ extended: true }));
 app.use("/api", shamanRouter_1.default);
 app.use("/api", spiritRouter_1.default);
 app.use("/api", animeRouter_1.default);
+app.use("/api", mangaRouter_1.default);
 app.get("/helloworld", function (request, response) {
     response.send("Hello, World!");
 });
