@@ -19,8 +19,8 @@ export const getMangaByTitle = async (
   res: Response
 ): Promise<void> => {
   try {
-    const name: string = req.params.name;
-    const manga: IManga[] = await Manga.find({ name: name });
+    const title: string = req.params.name;
+    const manga: IManga[] = await Manga.find({ title: title });
     res.status(200).json(manga);
   } catch (err) {
     console.log(err);

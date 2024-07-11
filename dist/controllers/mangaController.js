@@ -27,8 +27,8 @@ const getAllMangas = (req, res) => __awaiter(void 0, void 0, void 0, function* (
 exports.getAllMangas = getAllMangas;
 const getMangaByTitle = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const name = req.params.name;
-        const manga = yield manga_1.default.find({ name: name });
+        const title = req.params.name;
+        const manga = yield manga_1.default.find({ title: title });
         res.status(200).json(manga);
     }
     catch (err) {
