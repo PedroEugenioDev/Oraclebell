@@ -6,6 +6,7 @@ import shamanRouter from "./routes/shamanRouter";
 import spiritRouter from "./routes/spiritRouter";
 import animeRouter from "./routes/animeRouter";
 import mangaRouter from "./routes/mangaRouter";
+import toolRouter from "./routes/toolRouter";
 
 dotenv.config();
 connectDB();
@@ -19,6 +20,7 @@ app.use("/api", shamanRouter);
 app.use("/api", spiritRouter);
 app.use("/api", animeRouter);
 app.use("/api", mangaRouter);
+app.use("/api", toolRouter);
 
 app.get("/helloworld", function (request: Request, response: Response) {
   response.send("Hello, World!");
