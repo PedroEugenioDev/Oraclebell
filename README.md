@@ -77,7 +77,9 @@ You can access and use a functional version of this project at Heroku:
 ## 🙏 Contributing
 
 Thank you for considering contributing to Oraclebell project
+
 - You can contribute by sending information about characters or spirits that have not yet been added.
 - You can also contribute by suggesting improvements to the project, code, endpoints, etc.
-- Reporting bugs 
+- Reporting bugs
+- 
 In any case, feel free to create [a new issue](https://github.com/PedroEugenioDev/Oraclebell/issues) with detailed explanation please!
