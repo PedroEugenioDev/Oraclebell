@@ -7,6 +7,7 @@ import spiritRouter from "./routes/spiritRouter";
 import animeRouter from "./routes/animeRouter";
 import mangaRouter from "./routes/mangaRouter";
 import toolRouter from "./routes/toolRouter";
+import gameRouter from "./routes/gameRouter";
 
 dotenv.config();
 connectDB();
@@ -21,6 +22,7 @@ app.use("/api", spiritRouter);
 app.use("/api", animeRouter);
 app.use("/api", mangaRouter);
 app.use("/api", toolRouter);
+app.use("/api", gameRouter);
 
 app.get("/helloworld", function (request: Request, response: Response) {
   response.send("Hello, World!");
