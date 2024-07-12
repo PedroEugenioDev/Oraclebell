@@ -36,6 +36,23 @@ Requisições para a API devem seguir os padrões:
 | `200` | The resource has been fetched and transmitted in the message body. |
 | `404` | The server cannot find the requested resource. |
 
+### Exemplo
+Get shaman character information:
+
+(add link)
+
+Result:
+
+```json
+{
+    "spirits": [],
+    "_id": "668864ad1bbfe34b0da96bef",
+    "name": "Yoh Asakura",
+    "birthdate": "1985-05-12T00:00:00.000Z",
+    "furyoku": 108000
+  }
+```
+
 ## 💭 Process
 
 - I started creating a Database at Mongo Atlas and populate with Shaman King datas from Wiki
@@ -57,5 +74,10 @@ The learning objective of this project was to develop an API to learn about REST
 
 You can access and use a functional version of this project at Heroku:
 
+## 🙏 Contributing
 
-
+Thank you for considering contributing to Oraclebell project
+- You can contribute by sending information about characters or spirits that have not yet been added.
+- You can also contribute by suggesting improvements to the project, code, endpoints, etc.
+- Reporting bugs 
+In any case, feel free to create [a new issue](https://github.com/PedroEugenioDev/Oraclebell/issues) with detailed explanation please!
