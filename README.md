@@ -2,7 +2,7 @@
 
 ## 📃 Description
 
-This is a full RESTful API linked to an database detailing everything about Sham King franchise. This is a consumption-only API (only the HTTP GET method is available), no authentication is required to access this API, and all resources are fully open and available. 
+This is a full RESTful API linked to an database detailing everything about Shaman King franchise. This is a consumption-only API (only the HTTP GET method is available), no authentication is required to access this API, and all resources are fully open and available.
 
 ## 📦 Tech Stack
 
@@ -11,32 +11,38 @@ This is a full RESTful API linked to an database detailing everything about Sham
 ## 🔑 Key Features
 
 ### Methods
+
 Requisições para a API devem seguir os padrões:
 | Method | Description |
 |---|---|
 | `GET` | return information on one or more records |
+
 ### Endpoints
-| Endpoint | Response |
-|---|---|
-| `/shamans` | return an array of all shaman caracters |
+
+| Endpoint         | Response                                        |
+| ---------------- | ----------------------------------------------- |
+| `/shamans`       | return an array of all shaman caracters         |
 | `/shamans/:name` | return an object of an specific shaman caracter |
-| `/spirits` | return an array of all spirit caracters |
+| `/spirits`       | return an array of all spirit caracters         |
 | `/spirits/:name` | return an object of an specific spirit caracter |
-| `/animes` | return an array of all animes |
-| `/animes/:title` | return an object of an specific animes |
-| `/mangas` | return an array of all mangas |
-| `/mangas/:title` | return an object of an specific manga |
-| `/games` | return an array of all games |
-| `/games/:title` | return an object of an specific games |
-| `/tools` | return an array of all tools |
-| `/tools/:name` | return an object of an specific tool |
+| `/animes`        | return an array of all animes                   |
+| `/animes/:title` | return an object of an specific animes          |
+| `/mangas`        | return an array of all mangas                   |
+| `/mangas/:title` | return an object of an specific manga           |
+| `/games`         | return an array of all games                    |
+| `/games/:title`  | return an object of an specific games           |
+| `/tools`         | return an array of all tools                    |
+| `/tools/:name`   | return an object of an specific tool            |
+
 ### Response
-| Code | Description |
-|---|---|
+
+| Code  | Description                                                        |
+| ----- | ------------------------------------------------------------------ |
 | `200` | The resource has been fetched and transmitted in the message body. |
-| `404` | The server cannot find the requested resource. |
+| `404` | The server cannot find the requested resource.                     |
 
 ### Exemplo
+
 Get shaman character information:
 
 https://oraclebell.onrender.com/api/shamans/Yoh%20Asakura
@@ -45,12 +51,12 @@ Result:
 
 ```json
 {
-    "spirits": [],
-    "_id": "668864ad1bbfe34b0da96bef",
-    "name": "Yoh Asakura",
-    "birthdate": "1985-05-12T00:00:00.000Z",
-    "furyoku": 108000
-  }
+  "spirits": [],
+  "_id": "668864ad1bbfe34b0da96bef",
+  "name": "Yoh Asakura",
+  "birthdate": "1985-05-12T00:00:00.000Z",
+  "furyoku": 108000
+}
 ```
 
 ## 💭 Process
@@ -64,7 +70,7 @@ Result:
   - Animes
   - Mangas
   - Games
- - I deployed the server at Heroku.     
+- I deployed the server at Heroku.
 
 ## 📚 Learnings
 
@@ -74,7 +80,7 @@ The learning objective of this project was to develop an API to learn about REST
 
 You can access and use a functional version of this project at Render:
 
-[Oraclebell - Shaman King API](https://oraclebell.onrender.com/)
+[Oraclebell - Shaman King API](https://oraclebell.onrender.com/api)
 
 ## 🙏 Contributing
 
