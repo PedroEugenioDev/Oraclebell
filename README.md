@@ -39,7 +39,7 @@ Requisições para a API devem seguir os padrões:
 ### Exemplo
 Get shaman character information:
 
-(add link)
+https://oraclebell.onrender.com/api/shamans/Yoh%20Asakura
 
 Result:
 
@@ -72,7 +72,9 @@ The learning objective of this project was to develop an API to learn about REST
 
 ## 💻 Deploy
 
-You can access and use a functional version of this project at Heroku:
+You can access and use a functional version of this project at Render:
+
+[Oraclebell - Shaman King API](https://oraclebell.onrender.com/)
 
 ## 🙏 Contributing
 
@@ -81,5 +83,5 @@ Thank you for considering contributing to Oraclebell project
 - You can contribute by sending information about characters or spirits that have not yet been added.
 - You can also contribute by suggesting improvements to the project, code, endpoints, etc.
 - Reporting bugs
-- 
+
 In any case, feel free to create [a new issue](https://github.com/PedroEugenioDev/Oraclebell/issues) with detailed explanation please!
