@@ -23,8 +23,8 @@ app.use("/api", mangaRouter);
 app.use("/api", toolRouter);
 app.use("/api", gameRouter);
 
-app.get("/helloworld", function (request: Request, response: Response) {
-  response.send("Hello, World!");
+app.get("/api", function (request: Request, response: Response) {
+  response.send("Welcome to Oraclebell, the Shaman King API");
 });
 
 app.listen(PORT, () => {
