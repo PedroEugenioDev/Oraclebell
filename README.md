@@ -6,7 +6,7 @@
 
 ## 📃 Description
 
-This is a full RESTful API linked to an database detailing everything about Shaman King franchise. This is a consumption-only API (only the HTTP GET method is available), no authentication is required to access this API, and all resources are fully open and available.
+This is a RESTful API linked to an database detailing everything about Shaman King franchise. This is a consumption-only API (only the HTTP GET method is available), no authentication is required to access this API, and all resources are fully open and available.
 
 ## 📦 Tech Stack
 
