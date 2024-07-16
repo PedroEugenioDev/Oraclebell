@@ -1,4 +1,4 @@
-# Oraclebell: Shaman King API
+# Oraclebell: A Shaman King API
 
 ## 📃 Description
 
@@ -26,11 +26,11 @@ Requisições para a API devem seguir os padrões:
 | `/spirits`       | return an array of all spirit caracters         |
 | `/spirits/:name` | return an object of an specific spirit caracter |
 | `/animes`        | return an array of all animes                   |
-| `/animes/:title` | return an object of an specific animes          |
+| `/animes/:title` | return an object of an specific anime           |
 | `/mangas`        | return an array of all mangas                   |
 | `/mangas/:title` | return an object of an specific manga           |
 | `/games`         | return an array of all games                    |
-| `/games/:title`  | return an object of an specific games           |
+| `/games/:title`  | return an object of an specific game            |
 | `/tools`         | return an array of all tools                    |
 | `/tools/:name`   | return an object of an specific tool            |
 
@@ -70,11 +70,11 @@ Result:
   - Animes
   - Mangas
   - Games
-- I deployed the server at Heroku.
+- I deployed the server at Render.
 
 ## 📚 Learnings
 
-The learning objective of this project was to develop an API to learn about RESTful API and also to provide an extensive source of data related to Shaman King franchise. I learned about back-end development with Node.js, RESTful API and database management. I also learned how to deploy an database with Mongo Atlas an servers with Heroku.
+The learning objective of this project was to develop an API to learn about RESTful API and also to provide an extensive source of data related to Shaman King franchise. I learned about back-end development with Node.js, RESTful API and database management. I also learned how to deploy an database with Mongo Atlas an servers with Renser.
 
 ## 💻 Deploy
 
