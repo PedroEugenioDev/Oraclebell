@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="./assets/Oraculo.png" alt="Oraclebell">
+	<img width="700" src="./assets/Oraculo.png" alt="Oraclebell">
 </div>
 
 # Oraclebell: A Shaman King API
